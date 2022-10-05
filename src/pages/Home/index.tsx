@@ -1,17 +1,18 @@
+import { useContext } from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
-import { HandPalm, Play } from 'phosphor-react'
-import { zodResolver } from '@hookform/resolvers/zod'
 import * as zod from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { HandPalm, Play } from 'phosphor-react'
+
+import { Countdown } from './components/Countdown'
+import { NewCycleForm } from './components/NewCycleForm'
+import { CyclesContext } from '../../contexts/CyclesContext'
 
 import {
     HomeContainer,
     StartCountdownButton,
     StopCountdownButton,
 } from './styles'
-import { NewCycleForm } from './components/NewCycleForm'
-import { Countdown } from './components/Countdown'
-import { CyclesContext } from '../../contexts/CyclesContext'
-import { useContext } from 'react'
 
 type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
 
