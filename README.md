@@ -18,7 +18,7 @@
 * React
 * TypeScript
 * Styled Components
-* Phosphor-React
+* Phosphor Icons
 * Immer
 * Date-fns
 * Zod
